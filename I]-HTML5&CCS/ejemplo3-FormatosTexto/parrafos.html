@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrafos</title>
+</head>
+
+<body>
+    <h2 align="center">FORMATOS DE TEXTO LÓGICOS,FISICO Y DE EXTRUCTURA (COLORES).</h2>
+    <h3>Direccion</h3>
+    <address>
+        CFC Formacion <br>
+        c/ Virgen del Lluc ,38 <br>
+        28040
+    </address>
+    <!--
+        Etiquetas de formato de estilo fisico
+    Muestran directamente al Cliente cual ha de ser el aspecto, ese estilo, definido.
+    Son etiquetas tambien contenedoras
+    Las más relevantes:
+        -> Texto en negrita <b></b>
+        -> cursiva <i></i>
+        -> tachado <s></s>
+        -> Subrayado <u></u>
+        -> aumeto de tamaño <big></big>
+        -> disminucion tamaño <small></small>
+        -> Subindice <sub></sub>
+        ->indice superior <sup></sup>
+    -->
+    <h3>Parrafo de Texto fisico</h3>
+    <div>
+        <p><b>Lorem ipsum dolor </b> sit amet consectetur adipisicing elit. Doloribus, aut!
+            <u>met et eveniet eligendi sequi veniam quae fuga commodi quas!</u> A
+            Possimus nesciunt nihil laboriosam excepturi laborum, sapiente asperiores! Dignissimos, fuga.
+            Aperiam corrupti <big>rerum voluptatem</big> neque repudiandae, nemo harum illo delectus?
+        </p>
+        <p>
+            <i>Formula del Amoniaco:</i>NH <small><sub>3</sub></small> <br>
+            <i>Logaritmo Neperiano n:</i><big>e</big><sup> <small>n</small> </sup>
+        </p>
+    </div>
+    <!--
+        Textos de estilo logico
+    -->
+
+    <div align="right">
+        <h3> Formatos de Texto estilo lógico</h3>
+        <font size="7">Fuente mas grande</font><br>
+        <font size="1">Fuente mas pequeña</font><br>
+        <font color="red">Texto en rojo solido</font>
+    </div>
+
+    <!--
+            LOS COLORES 
+        
+        La perspectiva visual que ofrecen los monitores , estan en el espectro de la luz RGB (RED, GREEN, BLUE)
+        COLORES LUMINICOS PRIMARIOS Y ADITIVOS
+  -->
+    <hr>
+    <div>
+        <h3 style="font-size:100px ; text-align: center; color:rgb(94, 101, 101); font-family: Impact; ">Los colores
+        </h3>
+        <!--Sintaxis:
+            style="   Atributo:valor;        atributo:valor; .......etc...       "
+                           ⇓                        ⇓                                                              -->
+        <p style="    font-size:large;         color: rgb(25, 30, 32);">
+            Lorem, ipsum. <br>
+            Ea,<br>
+            Itaque, natus!
+        </p>
+        <!--
+*=>rgb(),los patrones de medida del solido del color vendrá estipulado 
+por la acotacion del 0 al 255
+partiendo de espectro de luz rojo, verde y azul
+
+*=>Color hexadecimal, definido en base 16, define desde #RRVVAA
+vendrá estipulado por la acotacion letra y numeros 00 al FF,mayor 
+capacida para especificar la intensidad del color, donde 0 será 
+la presencia minima del color y F será 15 veces el valor de esa minima
+presencia del color.
+https://html.colorcodes.com/es/
+        -->
+    </div>
+    <hr>
+    <!--
+    Estructura de arquitectura span vs div
+-->
+    <div>
+        div: salto de linea
+    </div><span>Contruyendo horizontalment.......</span>
+    <span> span: No provoca salto linea, no será elemento bloque, etiqueta contendora </span>
+    <span> span:Repito sin salto de linea</span>
+    <hr>
+    <div style="font-family:sans-serif ;">
+        <h3>Colocación de Párrafos</h3>
+        <p style="text-align:justify ;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, nemo.
+            Eum vero, earum praesentium eligendi maxime veritatis sequi laborum iusto?
+            Aperiam vero eaque eligendi ratione magnam numquam. Eos, ab voluptates.
+            Commodi corporis vel, nisi tempora earum aperiam quisquam culpa officia!
+            Porro eligendi tempore ipsam sit animi eos, a excepturi adipisci.
+            Quis fugiat dolor pariatur ullam eveniet fugit ad ratione rem.
+            Rem possimus deserunt alias, tempore iste cupiditate provident debitis at.
+            Natus tenetur corporis modi voluptatibus fugit, nostrum ea vel quas.
+            Maxime, architecto praesentium? Rerum dignissimos sunt, iure quibusdam tempora aliquid?
+            Et animi at velit qui blanditiis fugit pariatur eius ullam!
+        </p>
+        <hr style="width: 50%; " color="black" />
+        <p style="text-align:right; color:red ;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, ullam?
+            Qui architecto repellat aliquid quaerat iste assumenda sed numquam odit.
+            Ex modi impedit illo reiciendis, itaque adipisci temporibus. Quibusdam, ab?
+            Aliquid, vel optio nemo sed possimus sint ab inventore doloribus?
+            Dolores dolorum magnam enim vero laborum quasi qui exercitationem quam?
+            Assumenda perferendis a facere fugiat similique aliquam, voluptatibus cumque dolorum?
+            Corporis, ipsa provident aut officia sapiente voluptate eos laudantium distinctio!
+            Commodi autem in fugit eveniet facilis rem delectus a incidunt.
+            Placeat esse nobis at quibusdam fugiat, aspernatur quia deserunt necessitatibus!
+            Nemo quaerat facilis aperiam similique perspiciatis, quos dolorem enim error!
+        </p>
+        <hr style="width: 50% ;">
+        <p style="text-align:left ;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aut!
+            Veniam quisquam asperiores quae impedit ipsa facere accusantium et optio!
+            Sit dolorem animi error ea iste corporis totam consequatur repellat!
+            Exercitationem voluptate officiis autem neque repellendus eos, impedit cumque quidem?
+            Facere nesciunt, alias eaque cupiditate vero possimus temporibus! In, dolor.
+            Adipisci similique odio quae consequatur, voluptas saepe quasi repellat cum!
+            Doloremque sint libero ratione natus nulla eius consequatur temporibus rerum?
+            In, molestias dolorem? Impedit alias dolorum quia unde recusandae quis.
+            Eveniet voluptates facilis eum numquam similique ut quia omnis harum.
+            Enim itaque ullam consectetur minus sit nesciunt, expedita ab eaque?
+        </p>
+        <hr style="width: 50% ;">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS</title>
+</head>
+
+<body>
+    <!--
+        ------------LAS LISTAS--------------
+        A. Lista ordenadas
+        Presenta elementos de forma ordenada de manera numerica
+        etiquetadora contenedora
+        Sintaxis:
+        <ol>
+            <li></li>
+        </ol>
+        Atributos:
+        type, con los valores:
+            ->"1"
+            ->"a"
+            ->"A"
+            ->"I"
+    -->
+
+    <div>
+        <h2>Ejemplos de tipos de Lista</h2>
+        <h3>Listas Ordenadas</h3>
+        <h4>Ejemplo 1: Tabla sencilla</h4>
+        <ol type="i">
+            <li>Juana
+                <ol>
+                    <li>Luis </li>
+                    <li>Pedro</li>
+                </ol>
+            </li>
+            <li>Pedro</li>
+            <li>Jaime</li>
+            <li>Marta</li>
+            <li>Jorge</li>
+        </ol>
+        <hr style="width:50% ;">
+        <h4>Ejemplo 2: tablas anidadas</h4>
+        <ol>
+            <li style="font-weight: bold;">
+                Padres
+                <ol>
+                    <li style="color: blue ;">Hijo 1
+                        <ol>
+                            <li>Nietos</li>
+                            <li>Nietos</li>
+                            <li>Nietos</li>
+                        </ol>
+                    </li>
+                    <li>Hijo 2
+                        <ol>
+                            <li>Nieto
+                                <ol>
+                                    <li>Bisnieto</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <hr style="width:50% ;">
+        <h3>Ejemplo 3: irrupcion y continuacion de tablas</h3>
+        <ol type="a">
+            <li> ELEMENO UNO</li>
+            <li> ELEMENTO DOS</li>
+        </ol>
+        <h4>Explicacion elemento Dos</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptas.
+            Maiores quibusdam nam perferendis ut vel doloribus voluptatem eius quaerat.
+            Cupiditate repellat repudiandae eaque animi amet vel alias quaerat corporis?
+            Harum minus qui nesciunt est illum earum dicta quis voluptas.
+            Veniam aliquam eos obcaecati ea excepturi pariatur dignissimos placeat praesentium!
+            Tenetur in aut facere aliquam numquam beatae accusantium dolor libero?
+            Numquam inventore fuga perspiciatis asperiores ut ipsam, at laudantium veniam.
+            Quasi architecto harum pariatur quam molestias libero. Cupiditate, ipsam culpa.
+            Cupiditate repellendus quidem nisi iste debitis ipsum asperiores natus illo.
+            Incidunt consequuntur dicta natus architecto sint assumenda aspernatur unde quae!
+        </p>
+        <!--
+            Atributo strar="nº" el numero por el que continuará la lista
+            reinicia la lista a partir del parametro 3, en este ejemplo
+        -->
+        <ol type="a" start="3">
+            <li>Elemento TRES</li>
+        </ol>
+        <hr style="width:50% ;">
+        <!--
+    B.- Listas No Ordenadas
+    Lista no numeradas, html trabaja como viñetas de word
+    Atributos- type
+    Valores: Circle, squeare, disk
+-->
+        <h3>Listas No Ordenadas</h3>
+        <h4>Ejemplo 1: Clásica</h4>
+        <ul type="">
+            <li>Leche</li>
+            <li>Mantequilla</li>
+            <li>Crosanes</li>
+            <li>Zumo Naranja</li>
+            <li>Colacao</li>
+        </ul>
+        <hr style="width:50% ;">
+        <h4 style="text-align:center ;">Ejemplo 2: Sin listar </h4>
+        <ul style="list-style:none; text-align: center;">
+            <li>⚙Ford</li>
+            <li>⚙Maserati</li>
+            <li>⚙Ferrari</li>
+            <li>⚙Mustang</li>
+        </ul>
+        <hr style="width:50% ;">
+        <!--
+            C.Lista de definicion o Glosario
+            Desde una perspectiva de textos mas tecnicos, juridicos, tecnologicos
+            recurso para establecer definiciones o descripciones
+            Sintaxis:
+            <dl>
+                <dt></dt>
+                <dd></dd>
+            </dl>
+        -->
+        <div style="text-align:center ;">
+            <h4>LISTA DE DEFINICION O GLOSARIO</h4>
+            <dl>
+                <dt> <strong>HTML5</strong> </dt>
+                <dd>Metalenguaje para la elaboracion de DocType(Contenido Web)</dd>
+                <dt>CCS3</dt>
+                <dd> <u>Lenguaje para generar estilos en cascada de forma independiente</u> </dd>
+                <dt>JavaScript</dt>
+                <dd>Lenguaje de ejecución en el entorno cliente</dd>
+            </dl>
+        </div>
+        <!--
+
+            D.listas Deplegables
+            Su caracteristica principal viene definida por la etiqueta select,
+            generará estos menus despleglables para que los usuarios puedan seleccionar
+            un elemento. Con un una funcion instrumental para recopilar datos(enviar a un Servidor),
+             aputantar a un dato o lugares
+             Sintaxis:
+             a)
+             <select>
+                <option></option>
+             </select>
+             b)
+             <select>
+                <optgroup>
+                <option></option>
+                </optgroup>
+             
+             </select>
+        -->
+        <div style="text-align: center;">
+            <h3>Lista Desplegables</h3>
+            <h4>Ejemplo 1: Sencilla</h4>
+            <select name="" id="">
+                <option value="">-----Selecciona Un lenguaje-----</option>
+                <option value="">JavaScript</option>
+                <option value="">php</option>
+                <option value="">Java</option>
+            </select><br>
+            <hr style="width:50% ;">
+            <h4>Ejemplo 2: optgroup</h4>
+            <select name="" id="">
+                <optgroup label="Primera Opcion">
+                    <!--    <option value="">-----Selecciona Un lenguaje-----</option> -->
+                    <option value="">JavaScript</option>
+                    <option value="">php</option>
+                    <option value="">Java</option>
+                </optgroup>
+                <optgroup label="Segunda Opcion">
+                    <option value="">Python</option>
+                    <option value="">C++</option>
+                    <option value="">erlang</option>
+                </optgroup>
+            </select>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
