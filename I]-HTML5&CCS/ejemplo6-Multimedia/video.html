@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+
+<body>
+    <!--
+              ---------------.MULTIMEDIA.------------------
+        ATRIBUTOS               VALOR               DESCRIPCION
+    1.src=""                      ruta              Contenido a reproducir-ext.
+    2.poster=""                 imagen              presentacion visual
+    3.preload=""             auto/metadata/none     Como inicia la carga
+    4.metiagroup=""          nombre                 descripcion del contendio
+    5.autoplay=""           bolean(true|false)      reproduccion automatica
+    6.muted=""              bolean(true|false)      reproduccion con o sin sonido
+    7.loop=""               bolean(true|false)      reproduccion en ciclo o no 
+    8.controls=""           bolean(true|false)      muestra de controles al usuario
+    9.weight=""             px,%                    anchura video                
+    10.height               px,%                    altura video
+    11. frameborder         1=true 0=false          marco al 
+Sintaxis:
+1. <video>
+    <source/>
+</video>
+CONCLUSION:
+    Desde UX, todos los contenidos multimedia, tendrán el compromiso del mute, para la ejecucion
+    tanto en atributos como en carga
+    -->
+    <div style="text-align:center ;margin:0 auto ;">
+        <h2>Videos</h2>
+        <video width="20%" height="20%" poster="images/4-42958_icon-free-play-button-play-icon-3d-png.png"
+            autoplay="true" controls="true" frameborder="1">
+            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+        </video><br>
+        <!--
+    estructura de video recomendado ⇓
+-->
+        <video src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" autoplay="true" controls="true" frameborder="1"
+            width="33%" muted="true" loop="true"></video><br>
+        <!--
+    Videos a peticion
+    <iframe></iframe>
+-->
+
+        <iframe width="500" height="300" src="https://www.youtube-nocookie.com/embed/IiSjPcRWjYA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe><br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ErHo_oCkspc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe><br>
+
+
+        <iframe width="600" height="375" frameborder="1" type="text/html"
+            src="https://www.dailymotion.com/embed/video/x34swi?autoplay=1" allowfullscreen
+            title="Dailymotion Video Player" allow="autoplay">
+        </iframe><br>
+
+
+        <!--
+            Inyeccion de otros objetos (diferentes estructuras de document)
+            Atributos:
+            1.Generales:
+            src
+           * type: Definir la categoria del contenido embebido
+            width
+            heidth
+            2.Especificos
+            page-pagenum
+            tool-bar
+            zoom
+        
+        Sintaxis:
+            <iframe></iframe>
+            <embed></embed>
+           ** <object>
+            src, será sustituido por data=""
+           </object>
+
+        -->
+        <object data="../2.-Introduccion a la programacion.pdf" type="" width="675px" height="480px">
+        </object>
+    </div>
+</body>
+
+</html>
