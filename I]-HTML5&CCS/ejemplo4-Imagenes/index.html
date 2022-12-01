@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h2>TRATAMIENTO DE IMAGENES Y TEXTOS</h2>
+        <!--
+        --------------LAS IMAGENES-------------
+        Partimos de etiqueta no contenedora, apertura y cierra en la misma
+        atributo necesario para su funcionalidad src(sourcer)
+        Sintaxis: 
+        <img src="../carpeta/nombre_archivo.exto" />
+        <img src="https://" />
+    -->
+        <h3>Imagen Local</h3>
+        <!--
+            Atributos desde el style, o directamente en la etiqueta
+            width, heigth
+        -->
+        <div>
+            <img src="images/boladelmundo.png" style="width:60% ; height:260px ;" alt="descripcion de la imagen" />
+        </div>
+        <div>
+            <img src="images/boladelmundo.png" style="width:33% ;" alt="descripcion de la imagen" />
+        </div>
+        <h3>Imagen por Url</h3>
+        <div>
+            <img src="https://www.pikpng.com/pngl/b/343-3435493_coleccin-de-imgenes-sobre-bolas-del-mundo-en.png"
+                style="width:60% ; height:260px ;" alt="descripcion de la imagen" />
+        </div>
+        <div>
+            <img src=" https://www.kindpng.com/picc/m/63-630407_download-earth-png-free-download-for-designing-purpose.png"
+                width="33%" alt="descripcion de la imagen" />
+        </div>
+    </div>
+    <div>
+        <h3>Imagens con Texto Vertical: Precauciones ⚠</h3>
+        <!--
+            las alineaciones, llevarán atributos asociados al align, con 
+            valores asociados a:
+            1.top
+            2.middle
+            3.botton
+        -->
+        <div>
+            <img src="images/boladelmundo4.png.png" alt="" width="23%" align="top" />La TIERRA txt arriba <br>
+            <img src="images/boladelmundo3.png" alt="" width="23%" align="middle" />La TIERRA txt medio <br>
+            <img src="images/boladelmundo.png" alt="" width="23%" align="botton" />La TIERRA txt abajo <br>
+        </div>
+    </div>
+    <div>
+        <h3>Imagenes y Textos alrededor</h3>
+        <img src="images/boladelmundo.png" align="left" width="21%" alt="">
+        <p style="text-align:justify ; background-color:bisque ;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nostrum.
+            Dolor quae asperiores exercitationem officia error facere dolores esse dicta.
+            Necessitatibus dicta officiis iure, quos dolorum soluta similique ex dolor!
+            Et explicabo, quod ullam doloribus illo totam similique vel! Nostrum.
+            Cupiditate unde voluptatum similique excepturi maxime totam nisi dolores sunt.
+            Quos quasi assumenda eum amet numquam voluptas laborum reprehenderit enim!
+            Error delectus laboriosam nihil facilis fugit! Excepturi magni dolorum quo.
+            Cum expedita possimus velit laudantium quas autem accusamus hic aliquam.
+            Vitae delectus ipsam ab quibusdam reiciendis minus autem architecto rem!
+            Quisquam veniam sed ullam officia fugiat blanditiis perferendis voluptates numquam!
+        </p><br clear="left">
+        <!--Solucion a la triada de br
+        atributo clear, valores left o right
+        -->
+        <img src="images/boladelmundo.png" align="right" width="21%" alt="">
+        <p style="text-align:justify ; background-color:bisque ;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nostrum.
+            Dolor quae asperiores exercitationem officia error facere dolores esse dicta.
+            Necessitatibus dicta officiis iure, quos dolorum soluta similique ex dolor!
+            Et explicabo, quod ullam doloribus illo totam similique vel! Nostrum.
+            Cupiditate unde voluptatum similique excepturi maxime totam nisi dolores sunt.
+            Quos quasi assumenda eum amet numquam voluptas laborum reprehenderit enim!
+            Error delectus laboriosam nihil facilis fugit! Excepturi magni dolorum quo.
+            Cum expedita possimus velit laudantium quas autem accusamus hic aliquam.
+            Vitae delectus ipsam ab quibusdam reiciendis minus autem architecto rem!
+            Quisquam veniam sed ullam officia fugiat blanditiis perferendis voluptates numquam!
+        </p><br clear="right">
+        <!--
+            Centrado mas ortodoxo y actualizado, encapsulamiento
+            Atributos
+            margin
+            text-align
+            valores de centrado seran:
+            0 auto
+            center
+        -->
+        <div style="margin: 0 auto; text-align:center ;">
+            <img src="images/boladelmundo.png" width="21%" alt="">
+            <p style="text-align:justify ; background-color:bisque ;">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nostrum.
+                Dolor quae asperiores exercitationem officia error facere dolores esse dicta.
+                Necessitatibus dicta officiis iure, quos dolorum soluta similique ex dolor!
+                Et explicabo, quod ullam doloribus illo totam similique vel! Nostrum.
+                Cupiditate unde voluptatum similique excepturi maxime totam nisi dolores sunt.
+                Quos quasi assumenda eum amet numquam voluptas laborum reprehenderit enim!
+                Error delectus laboriosam nihil facilis fugit! Excepturi magni dolorum quo.
+                Cum expedita possimus velit laudantium quas autem accusamus hic aliquam.
+                Vitae delectus ipsam ab quibusdam reiciendis minus autem architecto rem!
+                Quisquam veniam sed ullam officia fugiat blanditiis perferendis voluptates numquam!
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
