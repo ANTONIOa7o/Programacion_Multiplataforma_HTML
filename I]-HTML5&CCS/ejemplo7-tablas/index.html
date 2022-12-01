@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETICULA-TABLA</title>
+</head>
+
+<body>
+    <div style="text-align:center ; margin:0 auto ;">
+        <h2>Tablas</h2>
+        <!--
+            ------------TABLE-----------
+            Sitaxis:
+            Etiqueta                Descripcion
+            <table>                 Etiqueta contenedora de tabla
+            <th>                    Etiqueta contenedora cabecera
+            <tr>                    Etiqueta contenedora de FILA
+            <td>                    Etiqueta contenedoras de dato (colums)
+            <caption>               Etiqueta titulo de tabla
+        -->
+
+        <h3>Ejemplo 1 : Tabla simple</h3>
+        <table border="1" style="text-align:center ; margin:0 auto ; color:cadetblue;">
+            <caption> <strong>Numeracion del 1 al 12</strong></caption>
+            <tr style="background-color:gainsboro ;">
+                <td>UNO</td>
+                <td>DOS</td>
+                <td>TRES</td>
+                <td>#Error</td>
+            </tr>
+            <tr>
+                <td>CUATRO</td>
+                <td>CINCO</td>
+                <td>SEIS</td>
+            </tr>
+            <tr>
+                <td>SIETE</td>
+                <td>OCHO</td>
+                <td>NUEVE</td>
+            </tr>
+            <tr>
+                <td>DIEZ</td>
+                <td>ONCE</td>
+                <td>DOCE</td>
+            </tr>
+        </table>
+        <!--
+    Combinacion de Celdas
+    Atributos           Valor                   Descripcion
+    colspan             nº espacios         nº de espacios que combina la columna
+    rowspan             nº espacios         nº de espacios que combina la fila
+-->
+        <h3>ejemplo 2 : Tabla combinada</h3>
+        <table border="2" style="text-align:center ; margin:0 auto ; color:cadetblue;"">
+        <tr>
+           <th>COLUMNA 1</th>
+           <th>COLUMNA 2</th>
+           <th>COLUMNA 3</th>
+           <th>COLUMNA 4</th>
+        </tr>
+        <tr>
+            <td colspan=" 2">Dato 1</td>
+            <!-- union de la columna   <td>Dato 2</td> -->
+            <td>Dato 3</td>
+            <td rowspan="3">Dato 4</td>
+            <!--Unir filas-->
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <!-- <td>Dato 4</td> -->
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">Dato 1</td>
+                <!--   <td>Dato 2</td> -->
+                <td>Dato 3</td>
+                <!--    <td>Dato 4</td> -->
+            </tr>
+            <tr>
+                <!--    <td>Dato 1</td>
+                <td>Dato 2</td> -->
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+        </table>
+        <table>
+            <h3>Agrupaciones de estilo,en columnas</h3>
+            <caption>EL PERIODICO DIGITAL 00</caption>
+            <tr>
+                <th><u> New´s</u></th>
+                <th>Deportes</th>
+                <th>Tiempo</th>
+            </tr>
+            <tr>
+                <td>Nacional</td>
+                <td>Futbol</td>
+                <td>España</td>
+            </tr>
+            <tr>
+                <td>Internacionales</td>
+                <td>Baloncesto</td>
+                <td>Europa</td>
+            </tr>
+            <tr>
+                <td>Sucesos</td>
+                <td>Mundial Qatar</td>
+                <td>Arabia</td>
+            </tr>
+
+            <colgroup>
+                <col style="background-color:lemonchiffon ;" />
+                <col span="2" style="background-color:lightsalmon ;" />
+            </colgroup>
+        </table>
+        <h3>Ejercicio: Realizar una tabla con dos o mas buscadores (browser) </h3>
+        <li>🔑 Defina con enlace a dicha pagina cada uno de los buscadores</li>
+        <li>🔑 Fondo azulado,letras en gris, tabla centrada </li>.
+
+
+
+    </div>
+</body>
+
+</html>
