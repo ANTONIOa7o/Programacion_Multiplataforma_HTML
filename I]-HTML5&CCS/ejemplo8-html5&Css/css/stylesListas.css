@@ -1,0 +1,12 @@
+ol,ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: square;
+}
+
+img{
+    width: 100px;
+}

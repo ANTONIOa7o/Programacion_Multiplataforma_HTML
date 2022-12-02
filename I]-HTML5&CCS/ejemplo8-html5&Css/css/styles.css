@@ -1,0 +1,106 @@
+/* comentarios*/
+
+/*
+        ---------------CSS---------------
+    Definido como lenguaje de estilo definido en un archivo de extension
+    css, CSS(Cascading Style sheet) con una finalidad de definir presentaciones
+    del doctype con diversidad de interaccion de estilos
+
+    Sintaxis General:
+    .#elemento-html{
+        atributo:valor;
+    }
+*/
+/*
+1. Estilos referencia a etiqueta, la propiedad adicion + , la grafia ','
+Sintaxis:
+etiqueta{
+    atributo:valor;
+}
+*/
+h1,
+h2,
+h3 {
+    color: slategrey;
+    font-weight: bold;
+    font-size: x-large;
+}
+h2 {
+    color: brown;
+}
+
+div {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*
+2.Estilo de conexion estandar con la aplicacion del atributo(class)
+Importante: Utilizacion del selector, definido por la grafia  '.'
+Sintaxis:
+.nombreReferencia{
+    atributo:valor;
+}
+*/
+.colorParrafo {
+    color: green;
+    text-align: justify;
+}
+
+/*
+3.Estilos de conexion con la directiva id, etiqueta de identificacion,
+definido por el selector '#'
+#nombreReferencia{
+    atributo:valor;
+}
+*/
+#p1 {
+    background-color: rgb(239, 212, 179);
+    font-size: large;
+    font-style: italic;
+
+}
+
+/*
+🔑Resumen:
+El selector de identificacion(id) es representado por #
+El selector de clase (class) es representado en .
+La diferencia que encontramos entre id y class, será:
+1. El id tendrá jurisdiscción, en diversos planos del desarrollo
+2. el class tendrá jurisdiccion en el plano de estilos, 
+*/
+/*
+4. Asociaciones Sencillas(Condiciones)
+Sintaxis:.
+etiqueta.nombreReferencia{
+    atributo:valor;
+}
+*/
+p.amarillo {
+    color: yellow;
+    font-weight: bolder;
+}
+
+hr {
+    width: 50%;
+
+}
+
+/*
+centrar tabla, el estilo de los bordes de la tabla sea azulada
+
+*/
+table,
+th,
+td {
+    text-align: center;
+    margin: 0 auto;
+    /*  border: 2px;
+    border-color: cornflowerblue;
+    border-style:solid ; */
+    border: 2px solid cornflowerblue;
+    border-collapse: collapse;
+
+}
+
+

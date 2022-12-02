@@ -1,0 +1,62 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: navy;
+    /*
+    Configuracion e inyeccion a elementos de imagenes desde css
+    */
+    background-image: url(../images/desenfocado.jpg);
+  /*   background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+header{
+    width: 980px;
+    height: 120px;
+    background-color: gold;
+}
+nav{
+    width: 980px;
+    height: 80px;
+    background-color: navy;
+    color: gold;
+    /*
+    float, atributo de colocacion de elementos que tienda su posicion hacia
+    la orientacion de su valor
+    */
+    float: left;
+}
+section{
+
+    float: left;
+    width: 780px;
+    height: 420px;
+    background-color: lightgray;
+}
+article{
+    float: left;
+    width: 780px;
+    background-color: #eee;
+    border-bottom: 1px solid lightgray;
+    min-height: 210px;
+}
+aside{
+    float: right;
+    width: 200px;
+    height: 220px;
+    background-color: lightsalmon;
+    border-bottom: 10px solid lightgray;
+    margin: auto;
+
+
+}
+footer{
+    float: left;
+    width: 980px;
+    height: 80px;
+    background-color: gold;
+}
