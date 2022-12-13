@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas % ,em y rem</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div style="margin:0 auto ;">
+        <h2>Analisis de las -MEDIDAS- em y rem</h2>
+        <h3>HERENCIA NORMAL</h3>
+        <ul>
+            <li>UNO</li>
+            <li>DOS</li>
+            <li>TRES
+                <ul>
+                    <li>Tres 1.1</li>
+                    <li>Tres 1.2</li>
+                    <li>Tres 1.3
+                        <ul>
+                            <strong>tres 1.3.1</strong>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>HERENCIA MEDIDA em</h3>
+        <p>em: Equivalente a la anchura de la M("eme" mayuscula) en su tamaño y tipo <br>
+            de letra M
+        </p>
+        <ul class="em">
+            <li>UNO</li>
+            <li>DOS</li>
+            <li>TRES
+                <ul>
+                    <li>Tres 1.1</li>
+                    <li>Tres 1.2</li>
+                    <li>Tres 1.3
+                        <ul>
+                            <li>
+                                <strong>tres 1.3.1</strong>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>HERENCIA MEDIDA rem</h3>
+        <p>
+            rem: Equivalente mismo que em, con una salvedad que actua desde <br>
+            la raiz (DOM), la letra que configura por defecto
+        </p>
+        <ul class="rem">
+            <li>UNO</li>
+            <li>DOS</li>
+            <li>TRES
+                <ul>
+                    <li>Tres 1.1</li>
+                    <li>Tres 1.2</li>
+                    <li>Tres 1.3
+                        <ul>
+                            <li>
+                                <strong>tres 1.3.1</strong>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

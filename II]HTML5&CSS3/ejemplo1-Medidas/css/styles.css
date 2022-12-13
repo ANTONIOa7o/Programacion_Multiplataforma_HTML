@@ -1,0 +1,20 @@
+html{
+    font-size: 16px;
+}
+/*
+Se comprueba que la medida predeterminada del html es de 16px
+*/
+/*
+podemos entender que 1em=16px
+*/
+.em li{
+    font-size: 1.3em;
+}
+/*
+Evidenciamos tambien que 1rem=16px*/
+.rem li{
+    font-size: 1.3rem;
+}
+li{
+    font-size: 80%;
+}
