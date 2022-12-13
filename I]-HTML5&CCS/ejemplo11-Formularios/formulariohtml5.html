@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--
+        --------------/FORMULARIOS/-----------------
+        Un conjunto de elementos que en su interrelacion permite introducir
+        un conjunto de datos asociado a los usuarios
+
+        a.Sintaxis:
+        <form>
+            
+        </form>
+
+        b.Agrupacion de Contendidos
+            Dos tipos de etiquetas contenedoras
+            1.<fieldset> Delimitará en contorno de un conjunto de
+                directivas que quisieramos resaltar
+            2.<legend> Titulo de formulario
+        
+        c.Introduccion de Datos
+         i.Texto
+                type=""(Naturaleza del texto: Numerica,password,text,fechas,...)
+                name=""(Nombre a la variable que reside en dicho dato)
+                size=""(nº de caracteres visuales o tamaño)
+                maxlenght="(limite de caracteres a escribir)
+                minlenght="""(minimo de caracteres a escribir)
+                value=""(valor por defecto o elemento seleccionado)
+                disable=""(elemento desactivado)
+                readonly=""(Contenido de lectura no modificable)
+                placeholder=""(Inscribe en la etiqueta)
+        ii.Menús
+                Elecciones que se ofrecen al usuario, desde las etiquetas
+                <select> y <datalist>
+                    * Atributos del select
+                        - name
+                        -size
+                        -mutiple
+                    *Atributos del datalist
+                        - select
+                        -value
+    3. Envido de datos
+                    Necesitaremos como condicion necesario pero no 
+                    suficiente , el boton con la siguiente sintaxis:
+                     <input tuype="submit" />
+                     dos botones uno enviar y otro borrar, 
+
+    -->
+    <div style="margin: 0 auto; width: 380px;">
+        <form>
+            <h2>FORMULARIO HTML5</h2>
+            <fieldset>
+                <legend> DATOS PERSONALES</legend>
+                <label>Nombre</label>
+                <input type="text" name="nombre" maxlength="20" minlength="3"><br>
+                <label>Apellidos</label>
+                <input type="text" name="apellidos" maxlength="20" minlength="3"><br>
+                <label for="">Edad</label>
+                <input type="number" name="edad" min="18" style="width:50px ;" ><br>
+                <label>Fecha de Nacimiento</label>
+                <input type="date" name="fechaN" maxlength="20" minlength="3"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Reserva</legend>
+                <label>Escoge tu Aventura</label>
+                <select name="experiencia" id="">
+                    <option value="">-------------Escoge Aventura---------------</option>
+                    <option value="1">Experiencia descenso rapidos(150€/persona)</option>
+                    <option value="2">Experiencia Velero(135€/dia)</option>
+                    <option value="3">Experincia Surf(90€ 2persona-Hora)</option>
+                    <option value="4">Paseo Caballo-Playa(35€ noche/persona)</option>
+                </select><br>
+                <label for="">Fecha de Reserva</label>
+                <input type="date" name="FechaR" id=""><br>
+                <label for="">Fecha y hora de Entrada</label>
+                <input type="datetime-local" name="entrada" id=""><br>
+                <label for="">Fecha y hora de Salida</label>
+                <input type="datetime-local" name="salida" id=""><br>
+                <label for="">Elige el color de tu pulsera</label>
+                <input type="color" name="pulsera" id="">
+            </fieldset>
+            <fieldset>
+                <legend>CONTACTO</legend>
+                <label for="">E-mail</label>
+                <input type="email" name="email" id="">
+            </fieldset><br>
+            <div style="text-align:center ;">
+                <input type="submit" value="enviar">
+             <!--    <input type="reset" value="borrar"> -->
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

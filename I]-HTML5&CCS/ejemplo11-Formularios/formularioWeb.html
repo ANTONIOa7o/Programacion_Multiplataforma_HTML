@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Web</title>
+
+</head>
+
+<body>
+    <div style="margin: 0 auto; text-align:left ; width: 380px;">
+        <h2 style="text-align: center;">Formulario Web</h2>
+        <!--
+            a Atributo de asociacion al form, action define una ubicacion (url)
+            b.Otro atributo será method=""
+            i.Get: Los datos se trasladarán a través de la url, separados
+            por ? y concatenados por & (url!?param=valor1&.....
+                -Usos principales:
+                    1.Pocos datos y se ajuste a derecho
+                    2.Informacion No confidencial
+                    3.Peticiones Idempotentes(No hay cambios en el servidor)
+            ii.Post: Los datos se trasladan en el cuerpo de la peticion
+                -usos principales:
+                1.Gran cantidad de datos,no hay limite de caracteres.
+                2.Informacion confidencial
+                3.Peticicion No Idempotentes(CRUD)
+        RECUERDA:
+        -->
+
+        <form action="" method="get">
+            <fieldset>
+                <legend> <strong>DATOS PERSONALES</strong> </legend>
+                <label style="color: green ;">Nombre</label>
+                <input type="text" name="nombre" maxlength="20" minlength="3" placeholder="Introduce Nombre"><br>
+                <label>Apellidos</label>
+                <input disabled="" value="Cuadrado" type="text" name="apellidos" maxlength="20" minlength="3"><br>
+                <label for="">Edad</label>
+                <input type="number" name="edad" min="18" style="width:50px ;"><br>
+                <label>password</label>
+                <input type="password" name="pw" title="Seis o mas caracteres" pattern="{6,}"><br>
+                <label for="">Sexo:</label><br>
+                <input type="radio" name="sexoH" value="hombre" checked="true">Hombre
+                <input type="radio">Mujer
+                <input type="radio">Transgenero <br>
+                <label for="">Aficiones:</label><br>
+                <input type="checkbox">Cine
+                <input type="checkbox">Musica
+                <input type="checkbox">Teatro
+                <input type="checkbox">Deporte <br>
+                <label for="">Lugar Residencia:</label><br>
+                <input type="text" list="provinciaList">
+                <datalist id="provinciaList">
+                    <option value="Madrid">Madrid</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Galicia">Galicia</option>
+                    <option value="Málaga">Málaga</option>
+                </datalist>
+                <fieldset>
+                    <legend>Datos Académicos</legend>
+                    <label for="">Nivel de Estudios</label>
+                    <select name="estudios" id="">
+                        <option value="nada">-Elige Nivel de Estudios-</option>
+                        <option value="c1">Sin Estudios</option>
+                        <option value="c2">ESO</option>
+                        <option value="c3">Grado Medio</option>
+                        <option value="c4">Grado Superior o Licenciatura</option>
+                        <option value="c5">Master-Doctorado-</option>
+                    </select><br><br>
+                    <label for="">Idiona</label>
+                    <select name="idioma" id="">
+                        <optgroup label="Inglés">
+                            <option value="Ic2">-Ingles Basico-</option>
+                            <option value="Ic4">-Intermedio-</option>
+                            <option value="Ic5">Avanzado</option>
+                        </optgroup>
+                        <optgroup label="Frances">
+                            <option value="Fc2">-Basico-</option>
+                            <option value="Fc4">-Intermedio-</option>
+                            <option value="Fc5">-Avanzado-</option>
+                        </optgroup>
+                    </select><br><br>
+                    <div>
+                        <label for="">Adjunta Curriculum</label>
+                        <input type="file" name="cvParam" id="">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Añade otros Datos de Interes</legend>
+                    <textarea name="informacionExtra" id="" cols="50" rows="5"
+                        placeholder="Aporta Informacion adyacente">
+                    </textarea><br>
+                    <label for="">Grado de Satisfaccion del Formulario</label><br>
+                    <input type="range" name="valoraciones" min="1" max="3" list="valoracion" id="">
+                    <datalist id="valoracion">
+                        <option value="1">Regular</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Muy Bueno</option>
+                    </datalist>
+                </fieldset>
+                <div style="text-align:right ;">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
