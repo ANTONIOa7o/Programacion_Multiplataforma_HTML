@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bordeados</title>
+</head>
+<body>
+    <style>
+    div{
+        width: 40%;
+        height: 200px;
+        background-color: cornflowerblue;
+        margin: 50px;
+        border: thin solid black;
+    }
+    /*
+    Atributo principal del bordeado será border-radius,
+    Sintaxis:
+    border-radius: valor-radio*
+    */
+    #cuadro1{
+        border-radius: 20px;
+    }
+    #cuadro2{
+        border-radius: 20px 60px;
+    }
+    #cuadro3{
+        border-radius: 15px 50px 30px;
+    }
+    #cuadro4{
+        border-radius: 20px 80px 60px 40px;
+    }
+    #cuadro5{
+        border-radius: 20px/40px;
+    }
+    #cuadro6{
+        border-radius: 20px 40px/ 60px 50px ;
+    }
+    #cuadro7{
+        border-radius: 20px 40px 60px 80px/60px 70px 80px 90px;
+    }
+    </style>
+    <h2>Bordes Circulares</h2>
+    <div id="cuadro1"></div>
+    <div id="cuadro2"></div>
+    <div id="cuadro3"></div>
+    <div id="cuadro4"></div>
+    <h2>Bordes Elipticos</h2>
+    <div id="cuadro5" ></div>
+    <div id="cuadro6"></div>
+    <div id="cuadro7"</div>
+</body>
+</html>
