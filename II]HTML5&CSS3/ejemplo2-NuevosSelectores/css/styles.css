@@ -1,0 +1,100 @@
+div{
+    margin: 0 auto;
+    text-align: center;
+}
+/*
+ I.- ASOCIACION (:) Selector conjugado etiqueta y atributo
+*/
+input:disabled{
+    color: red;
+    font-weight: bold;
+}
+/*
+1. Asociacion (:) añadiendo mas directivas, focus
+*/
+input:focus{
+    border: thick solid skyblue;
+    font-size: x-large;
+}
+/*
+2. Asociacion (:) directiva active (realiza foco en cualquier etiqueta, exceptuando input)
+*/
+label:active {
+    background-color: brown;
+    font-weight: bold;
+    color:white;
+}
+/*
+3. Asociacion (:), lenguajes de concatenación 
+[](asociacion elemento y atributo) :  
+(equiparacion de elementos) + ( selector adayacente) 
+*/
+input[type=checkbox]:checked+label{
+    font-weight: bold;
+    color: red;
+}
+/*
+II.-SELECCION ELEMENTOS ( ^ $ *)
+    1.Comienzo de Selecciones
+*/
+ol li[id^='J']{
+    background-color: yellow;
+}
+/*
+2.Finalizacion de Selecciones
+*/
+ol li[id$='a']{
+    background-color: aqua;
+}
+/*
+3.Contenga Seleccion
+*/
+ol li[id*='r']{
+    background-color: purple;
+}
+/*
+III.- PSEUDO-CLASES: Directivas añadidas que aportan selecciones o
+cambios definidos
+1. hijos de clase nth-child
+*/
+table,tr,td{
+    border: thin solid navy;
+    border-collapse: collapse;
+    caption-side: bottom;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+tr:nth-child(even){/*even pares*/
+background-color: coral;
+}
+/*tr:nth-child(odd){odd impar
+ background-color: orangered;
+}
+ */
+ #tablaCebreada tr:nth-child(odd){
+    background-color: orangered;
+ }
+ /*
+ 1.2 Hijos de clase, desde su definicion de pseudoclase de uso variado:
+    :first-child(Selecciona el primer elemento)*
+    ::first-letter(Seleccion primera letra)
+    :before(posiciona al inicio del contenido)
+    :after(posiciona al final del contenido)
+    :nth-of-type(Posicion del elemnto)*
+
+ */
+ ul li:first-child{
+    background-color: lawngreen;
+ }
+ ul li:last-child{
+    background-color: purple;
+ }
+ p:nth-of-type(1){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+ }
+ p:nth-of-type(3){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+ }
