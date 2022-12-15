@@ -1,0 +1,51 @@
+.centro{
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px;
+}
+.menu{
+    background-color: rgb(212, 205, 205);
+    color: white;
+    border-color: black;
+    font-family: sans-serif;
+    font-size: 32px;
+    box-shadow: 2px 2px 2px rgb(139, 137, 137);
+    margin: 32px;
+    border-radius: 16px;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color, 0.8ms border-radius,0.8ms ; 
+
+}
+/*
+Las transiciones como otra forma de interactuacion con y del usuario, que
+cambia las propiedades de css, en un principio los cambios se producian de 
+manera brusca, ofrecer una cierta suavidad en el cambio producido por un 
+evento. Surge una ventaja tactica permite definir el cambio entre dos estados
+del elemento.
+Sin olvidar que accion sino interaccion
+*/
+.menu:hover{
+    background-color: rgb(238, 212, 212);
+    border-radius: 6px;
+    color: black;
+    font-weight: bold;
+    font-size:32px;
+
+}
+
+.caja{
+    margin: 0 auto;
+    width: 30em;
+    min-height: 10em;
+    background-color: grey;
+    padding: 1em;
+    font-weight: bold;
+    text-align:center ;
+    transition: width 2s, height 4s ,background-color 6s;
+}
+.caja:hover{
+    width:70% ;
+    height:20px ;
+    background-color:lightgrey ;
+}
