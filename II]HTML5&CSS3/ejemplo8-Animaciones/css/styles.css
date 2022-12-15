@@ -1,0 +1,74 @@
+/*
+--------------LAS ANIMACIONES--------------
+Establecer diferentes estados de los elementos medidos en tiempo y en secuencia
+Definidos en los siguientes atributos:
+animation-name: definimos la animacion, a traves de su nombre
+animation-duration:  tiempo total que durará la animación
+animation-itineration-count: n repeticion de la animacion
+Sintaxis:
+@keyframes controlador que permite definir los pasos intermedios o las
+definiciones de las secuencias (puntos de trayectoria)
+
+@keyframes animation-name {
+    0%{
+        Al inicio, atributos
+    }
+    25%{
+
+        2/4 de la ejecucion atributos
+    }
+    50%{
+
+        3/4 de la ejecucion atributos
+    }
+    75%{
+        4/4 de la ejecucion atributos
+    }
+
+
+}
+
+*/
+#caja {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    font-size: 1em;
+    text-align: center;
+    animation-name: animacion1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion1 {
+    0% {
+        background-color: rgb(245, 193, 96);
+        font-size: 1.5em;
+    }
+
+    25% {
+        background-color: orange;
+        font-size: 4em;
+        width: 400px;
+        border: 0.1em solid black;
+        transform:translateX(400px);
+    }
+
+    50% {
+        background-color: orangered;
+        font-size: 1em;
+        width: 300px;
+        transform: translateX(400px) translateY(400px) rotate(45deg) ;
+        border-radius: 10%;
+
+    }
+
+    75% {
+
+        background-color: olivedrab;
+        font-size: 3em;
+        width: 300px;
+        transform: translateY(400px);
+       /*  opacity: 0.5; */
+    }
+}
