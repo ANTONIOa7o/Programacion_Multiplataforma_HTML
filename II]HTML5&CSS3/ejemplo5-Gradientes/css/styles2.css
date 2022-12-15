@@ -1,0 +1,34 @@
+p,
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 16px;
+
+}
+
+/*
+Representacion o alegoría de un boton(elemento), traslada al usuario
+percepción de activacion; donde el usuario al presionar el boton primario
+y seguidamente podemos enlazar alguna accion asociada, 
+*/
+p:active {
+    background: linear-gradient(rgb(236, 78, 100),
+            rgb(240, 164, 78),
+            rgb(204, 191, 76));
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    text-align: justify;
+}
+/*before*/
+h2 a{
+    color: blue;
+    text-decoration: none;
+}
+/*after*/
+h2 a:active{
+    background-color: lightgray;
+    color: wheat;
+}
+

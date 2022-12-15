@@ -1,0 +1,82 @@
+div{
+    width: 30%;
+    height: 120px;
+    margin: 20px;
+    background-color: lightblue;
+    float: left;
+
+}
+/*
+La acción de gradiente lineal se establece como valor en el atributo background
+Sintaxis:
+linear-gradient(to direccion lineal, colores %,....n  )
+*/
+#defecto{
+    background: linear-gradient(
+        rgb(103,103,180),
+        rgb(236,169,236),
+        rgb(231,231,125));
+}
+#izq_drecha{
+    background: linear-gradient(to right,
+        rgb(103,103,180),
+        rgb(236,169,236),
+        rgb(231,231,125));
+}
+#drecha_izq{
+    background: linear-gradient(to left,
+        rgb(103,103,180),
+        rgb(236,169,236),
+        rgb(231,231,125));
+}
+#arriba{
+    background: linear-gradient(to top,
+        rgb(103,103,180),
+        rgb(236,169,236),
+        rgb(231,231,125));
+}
+#abajo{
+    background: linear-gradient(to bottom,
+        rgb(103,103,180),
+        rgb(236,169,236),
+        rgb(231,231,125));
+}
+#diagonal_drch{
+    background: linear-gradient(to bottom right,
+        rgb(103,103,180),
+        rgb(236,169,236),
+        rgb(231,231,125));
+}
+#diagonal_izq{
+    background: linear-gradient(to bottom left,
+        rgb(103,103,180),
+        rgb(236,169,236),
+        rgb(231,231,125));
+}
+/*La acción de gradiente radial se establece como valor en el atributo background
+Sintaxis:
+radial-gradient(to direccion lineal, colores %,....n  )
+*/
+#centro{
+    background: radial-gradient(blue,violet,yellow);
+}
+#gredondeado{
+    background: radial-gradient(blue 10%,violet 60%,yellow 90%);
+}
+#circular{
+    background: radial-gradient(circle,blue,violet,yellow);
+}
+#elipse{
+    background: radial-gradient(ellipse,blue,violet,yellow);
+}
+#opacidad{
+    background: linear-gradient(to bottom right,
+    white 60%,blue
+    );
+    width: 75%;
+    height: 200px;
+}
+
+#repetir{
+    background: repeating-radial-gradient(blue 10%,violet 20%,yellow 30%);
+}
