@@ -1,0 +1,40 @@
+/*
+---------------LAS ROTACIONES-----------------
+Genera y define un movimiento estático, del elemento inicial con
+respecto a un cambio en sus ejes de coordenadas 
+Sintaxis:
+Desde el atributo transform: rotate(grados)
+*/
+div{
+    float: left;
+    width: 10em;
+    height: 10em;
+    margin: 6em;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 1em 1em 1em lightblue;
+    background-color: skyblue;
+    border: 12px solid skyblue;
+    transition: transform 1.5s;
+}
+#cuadro1:hover{
+    transform: rotate(30deg);
+}
+#cuadro2:hover{
+    transform: rotate(-30deg);
+}
+/*
+utiliza x y z y el angulo
+*/
+#cuadro3:hover{
+    transform: rotate3d(1,1,2, 60deg);
+}
+#cuadro4:hover{
+ transform: rotateX(100deg) ;
+}
+/*
+pseudo-clase :hover coincide cuando el usuario interactua
+con el elemento señaladado o en su entorno, no genera necesariamente
+una activa o accion en este evento. ed: el usuario desplaza sobre un
+elemento este interactura con la directiva establecida 
+*/
