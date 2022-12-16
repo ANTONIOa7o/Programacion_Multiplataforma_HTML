@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Contenido de Edicion</title>
+</head>
+
+<body>
+    <style>
+        /*Eslilo de edicion
+        Principalmentese se desarrolla para generar estructuracion de los
+        contenidos. Definicion de esta estructura:
+         Sintaxis               Propiedad                  Descripcion
+        colum-count                 nº                      nº de columnas
+        colum-gap                   tamaño
+        colum-rule-style               estilo
+        colum-rule-width                ancho
+
+        
+        */
+        div{
+            column-count: 3;
+            column-gap: 6%;
+            column-rule-style: double;
+            column-rule-width: 5px;
+            column-rule-color: lightsalmon;
+        }
+        h2{
+            -webkit-text-stroke: 1px black;
+            -moz-text-stroke: 1px black;
+            -ms-text-stroke: 1px black;
+            color:transparent;
+            font-size: 36px;
+        }
+        /*
+        A la hora diseñar con propiedades NO STANDAR, no presentan un soporte
+        generalizado en los distintos patern, clientes...browser
+        llamadas a los desarrolladores de la siguiente manera de preventiva:
+        =>-webkit-basados en el crome y safari y opera
+        =>-moz-Utiliza firefox
+        =>-ms-utilizados en internet Explorer
+        */
+        .bordeLetra{
+            text-align: justify;
+            color: white;
+            background-color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 26px;
+            text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, 1px 1px 1px #000;
+        }
+
+           </style>
+           <div>
+            <h2>Estilo Periodistico</h2>
+            <p class="bordeLetra">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magni!
+                Ea, rem. Minima tempora laboriosam sequi delectus consequatur nobis perspiciatis?
+                Necessitatibus, deleniti numquam? Magni veritatis ad nobis minima architecto distinctio.
+                Voluptate architecto quod sapiente? Accusantium repellendus unde sapiente quas similique!
+                Iste cupiditate totam magni dignissimos corrupti pariatur distinctio! Nostrum, enim!
+                Modi ullam similique deserunt velit dignissimos pariatur maiores quis porro.
+                Minima ducimus fugit explicabo id officiis voluptas quibusdam unde ullam?
+                Reiciendis pariatur eligendi, est consequuntur illo nihil dolore doloribus sapiente.
+                Quam eaque laboriosam vel cum asperiores eum optio placeat perspiciatis.
+                Veritatis, doloremque tempora quidem saepe quo aspernatur tempore culpa quod?
+                Commodi, dignissimos? Nostrum qui expedita nisi odio optio explicabo provident!
+                Veritatis eveniet cumque quidem aliquid illum ipsum velit? Quisquam, repellat?
+                Cum delectus natus fugit laboriosam earum recusandae perferendis, unde aperiam.
+                Illum, magni? Aspernatur autem officia, molestias unde hic consequatur repudiandae!
+                Quibusdam nostrum cum a laborum dicta veniam! Aspernatur, sequi necessitatibus?
+                Quia id ut minus est non eveniet vel quae saepe.
+                Aspernatur fugiat quae eaque. Alias praesentium provident harum dolorum vel.
+                Iste quaerat perferendis pariatur consequuntur nulla sequi dolores. Nobis, asperiores.
+                Expedita ducimus quas sed nulla saepe illo, quidem aspernatur ab.
+                Debitis quisquam eius quod commodi, sapiente rerum architecto error ex.
+            </p>
+           </div>
+</body>
+
+</html>
