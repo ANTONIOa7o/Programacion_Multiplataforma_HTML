@@ -1,0 +1,312 @@
+div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: #7f8c8d;
+    padding: 7px 20px;
+    border-radius: 150px;
+    margin: 15px 20px;
+
+}
+
+/*ROJO*/
+.rojo {
+    background-color: #E74C3C;
+    box-shadow: 0px 5px 0px 0px #c0392b;
+}
+
+.rojo:hover {
+    background-color: #ff5242;
+}
+
+.rojo:active {
+    box-shadow: 0px 2px 0px 0px #c0392b;
+}
+
+/*1º boton Flash*/
+.flash:hover {
+    animation: 0.7s flash 1;
+}
+
+@keyframes flash {
+    50% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+
+}
+
+/*2º boton click*/
+.click:hover {
+    animation: 0.7s click 2;
+}
+
+@keyframes click {
+
+    25%,
+    75% {
+        transform: scale(0.8);
+
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/*boton chicle*/
+.chicle:hover {
+    animation: 0.7s chicle 2;
+}
+
+@keyframes chicle {
+    30% {
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+
+    50% {
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+
+    60% {
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+}
+
+/*AZUL*/
+.azul {
+    background-color: #3498db;
+    box-shadow: 0px 5px 0px 0px #2980b5;
+}
+
+.azul:active {
+    box-shadow: 0px 2px 0px 0px #2980b5;
+}
+
+.azul:hover {
+    background-color: #39a0e5;
+}
+
+/*Boton vibracion*/
+.vibracion:hover {
+    animation: 1s vibracion 2;
+}
+
+@keyframes vibracion {
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+
+    5%,
+    25%,
+    45%,
+    65%,
+    85% {
+        transform: translateY(-10px);
+    }
+
+    15%,
+    35%,
+    55%,
+    75%,
+    95% {
+        transform: translateY(10px);
+    }
+
+}
+
+/*Boton balanceo*/
+.balancear:hover {
+    animation: 1s balancear 1;
+}
+
+@keyframes balancear {
+    20% {
+        transform: scale(0.7) rotate(-6deg);
+    }
+
+    30%,
+    70% {
+        transform: scale(1.1) rotate(6deg);
+    }
+
+    50%,
+    90% {
+        transform: scale(1.1) rotate(-6deg);
+    }
+}
+
+/*Boton descolgado*/
+.descolgado:hover {
+    animation: 1s descolgado 1;
+}
+
+@keyframes descolgado {
+
+    20%,
+    60% {
+        transform: rotate(80deg);
+
+    }
+
+    40% {
+        transform: rotate(60deg);
+    }
+
+    80% {
+        transform: rotate(60deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+}
+
+/*BOTON ROSA*/
+/*ejercicio: Boton Rebote*/
+.rosa {
+    background: #f480ff;
+    box-shadow: 0px 5px 0px 0px #f176fc;
+}
+
+.rosa:hover {
+    background: #f084fa;
+}
+
+.rosa:active {
+    box-shadow: 0px 2px 0px 0px #f176fc;
+
+
+}
+
+.rebote:hover {
+    animation: 1.5s rebote 2;
+}
+
+@keyframes rebote {
+
+    20%,
+    50%,
+    80% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-45px);
+    }
+
+    60% {
+        transform: translateY(-25px);
+    }
+}
+
+/*Boton Sombra*/
+.sombra_movil {
+    transform: translateX(1);
+}
+
+.sombra_movil:hover {
+    animation: 1.5s moverboton infinite;
+    transform: translateY(-8px);
+}
+
+@keyframes moverboton {
+    50% {
+        transform: translateY(-3px);
+    }
+
+}
+
+.sombra_movil:before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 16px;
+    top: 100%;
+    left: 5%;
+    bottom: 0;
+
+    background: -webkit-radial-gradient(center, ellipse,
+            rgba(0, 0, 0, 0.30) 10%, rgba(0, 0, 0, 0.0) 80%);
+    transition-duration: 0.5s;
+    opacity: 0;
+
+}
+
+.sombra_movil:hover:before {
+    opacity: 0.4;
+    transform: translateY(15px);
+    opacity: 1;
+    animation: 1.5s moversombra infinite;
+}
+
+@keyframes moversombra {
+    50% {
+        opacity: 1;
+        transform: translateY(3px);
+    }
+}
+
+/*Boton Flecha*/
+.flecha:before {
+    transition-duration: 0.3s;
+    content: '';
+    border-color: transparent #f480ff;
+    border-style: solid;
+    border-width: 15px 15px 15px 0px;
+    position: absolute;
+    top: 51%;
+    left: 29px;
+    margin-top: 85px;
+}
+
+.flecha:hover:before {
+    animation: 1.2s moverflecha infinite;
+}
+
+@keyframes moverflecha {
+    25% {
+        -webkit-transform: rotate(0deg);
+        left: 10px;
+    }
+
+    50% {
+        left: 15px;
+        -webkit-transform: rotate(180deg);
+    }
+
+    90% {
+        -webkit-transform: rotate(180deg);
+    }
+
+}
+/* .centrado{
+    margin-left: 450px;
+   
+} */
